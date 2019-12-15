@@ -1,22 +1,18 @@
 // Java program to illustrate creating an array of
 // objects
 
-class Student
-{
+class Student {
 	public int roll_no;
 	public String name;
-	Student(int roll_no, String name)
-	{
+	Student(int roll_no, String name) {
 		this.roll_no = roll_no;
 		this.name = name;
 	}
 }
 
 // Elements of array are objects of a class Student.
-public class GFG
-{
-	public static void main (String[] args)
-	{
+public class GFG {
+	public static void main (String[] args) {
 		// declares an Array of integers.
 		Student[] arr;
 
@@ -24,15 +20,15 @@ public class GFG
 		arr = new Student[5];
 
 		// initialize the first elements of the array
-		arr[0] = new Student(1,"aman");
+		arr[0] = new Student(1,"John");
 
 		// initialize the second elements of the array
-		arr[1] = new Student(2,"vaibhav");
+		arr[1] = new Student(2,"Doe");
 
 		// so on...
-		arr[2] = new Student(3,"shikar");
-		arr[3] = new Student(4,"dharmesh");
-		arr[4] = new Student(5,"mohit");
+		arr[2] = new Student(3,"Sarah");
+		arr[3] = new Student(4,"Paz");
+		arr[4] = new Student(5,"Trolls");
 
 		// accessing the elements of the specified array
 		for (int i = 0; i < arr.length; i++)

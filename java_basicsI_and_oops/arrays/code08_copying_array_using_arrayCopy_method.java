@@ -2,11 +2,10 @@
 
 class TestArrayCopyDemo {
     public static void main(String[] args) {
-        char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',
-			    'i', 'n', 'a', 't', 'e', 'd' };
-        char[] copyTo = new char[7];
+        char[] copyFrom = {'h','e','l','l','o'};
+        char[] copyTo = new char[5];
 
-        System.arraycopy(copyFrom, 2, copyTo, 0, 7);
+        System.arraycopy(copyFrom, 0, copyTo, 0, 5);
         System.out.println(new String(copyTo));
     }
 }

@@ -1,12 +1,14 @@
-import java.util.*;
-class TestCollection11{
+import java.util.Iterator;
+import java.util.TreeSet;
+
+class TestCollection13{
  public static void main(String args[]){
- 
+
   TreeSet<String> al=new TreeSet<String>();
-  al.add("Ravi");
-  al.add("Vijay");
-  al.add("Ravi");
-  al.add("Ajay");
+  al.add("a");
+  al.add("b");
+  al.add("c");
+  al.add("d");
 
   Iterator<String> itr=al.iterator();
   while(itr.hasNext()){

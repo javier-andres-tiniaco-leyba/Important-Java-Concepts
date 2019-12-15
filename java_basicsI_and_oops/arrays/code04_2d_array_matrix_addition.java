@@ -1,5 +1,5 @@
 class Testarray5 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         //creating two matrices
         int a[][]={{1,3,4},{3,4,5}};
         int b[][]={{1,3,4},{3,4,6}};

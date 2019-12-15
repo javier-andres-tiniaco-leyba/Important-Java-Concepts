@@ -2,12 +2,10 @@
 // binary search on array elements in a single line
 import java.util.Arrays;
 
-public class Main
-{
-	public static void main(String[] args)
-	{
+class Main {
+	public static void main(String[] args) {
 		int ar[] = {4, 6, 1, 8, 3, 9, 7, 4, 2};
-		
+
 		// Sort the complete array in ascending order
 		// so that Binary Search can be applied
 		Arrays.sort(ar);

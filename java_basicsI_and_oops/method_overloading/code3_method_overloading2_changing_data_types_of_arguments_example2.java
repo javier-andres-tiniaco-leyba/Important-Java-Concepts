@@ -1,7 +1,7 @@
 // Java Method Overloading Example
 // NOTE: Java doesn't support user-defined operator overloading
 
-public class ExampleOverloading {
+class ExampleOverloading {
 
    public static void main(String[] args) {
       int a = 11;
@@ -9,7 +9,7 @@ public class ExampleOverloading {
       double c = 7.3;
       double d = 9.4;
       int result1 = minFunction(a, b);
-      
+
       // same function name with different parameters
       double result2 = minFunction(c, d);
       System.out.println("Minimum Value = " + result1);
@@ -24,9 +24,9 @@ public class ExampleOverloading {
       else
          min = n1;
 
-      return min; 
+      return min;
    }
-   
+
    // for double
    public static double minFunction(double n1, double n2) {
      double min;
@@ -35,6 +35,6 @@ public class ExampleOverloading {
       else
          min = n1;
 
-      return min; 
+      return min;
    }
 }

@@ -1,20 +1,23 @@
-import java.util.*;    
-class TestArrayLinked{    
- public static void main(String args[]){    
-     
-  List<String> al=new ArrayList<String>();//creating arraylist    
-  al.add("Ravi");//adding object in arraylist    
-  al.add("Vijay");    
-  al.add("Ravi");    
-  al.add("Ajay");    
-    
-  List<String> al2=new LinkedList<String>();//creating linkedlist    
-  al2.add("James");//adding object in linkedlist    
-  al2.add("Serena");    
-  al2.add("Swati");    
-  al2.add("Junaid");    
-    
-  System.out.println("arraylist: "+al);  
-  System.out.println("linkedlist: "+al2);  
- }    
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+class TestCollection10{
+ public static void main(String args[]){
+
+  List<String> al=new ArrayList<String>();//creating arraylist
+  al.add("a");//adding object in arraylist
+  al.add("b");
+  al.add("c");
+  al.add("d");
+
+  List<Integer> al2=new LinkedList<Integer>();//creating linkedlist
+  al2.add(1);//adding object in linkedlist
+  al2.add(2);
+  al2.add(3);
+  al2.add(4);
+
+  System.out.println("arraylist: "+al);
+  System.out.println("linkedlist: "+al2);
+ }
 }

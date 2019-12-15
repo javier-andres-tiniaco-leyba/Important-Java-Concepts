@@ -1,12 +1,14 @@
-import java.util.*;
-public class TestCollection7{
+import java.util.LinkedList;
+import java.util.Iterator;
+
+class TestCollection9{
  public static void main(String args[]){
- 
+
   LinkedList<String> al=new LinkedList<String>();
-  al.add("Ravi");
-  al.add("Vijay");
-  al.add("Ravi");
-  al.add("Ajay");
+  al.add("a");
+  al.add("b");
+  al.add("c");
+  al.add("d");
 
   Iterator<String> itr=al.iterator();
   while(itr.hasNext()){

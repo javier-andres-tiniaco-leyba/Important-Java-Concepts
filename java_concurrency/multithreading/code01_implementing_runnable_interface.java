@@ -1,12 +1,12 @@
 class RunnableDemo implements Runnable {
    private Thread t;
    private String threadName;
-   
+
    RunnableDemo( String name) {
       threadName = name;
       System.out.println("Creating " +  threadName );
    }
-   
+
    public void run() {
       System.out.println("Running " +  threadName );
       try {
@@ -20,7 +20,7 @@ class RunnableDemo implements Runnable {
       }
       System.out.println("Thread " +  threadName + " exiting.");
    }
-   
+
    public void start () {
       System.out.println("Starting " +  threadName );
       if (t == null) {
@@ -30,13 +30,16 @@ class RunnableDemo implements Runnable {
    }
 }
 
-public class TestThread {
+class TestThread {
 
    public static void main(String args[]) {
       RunnableDemo R1 = new RunnableDemo( "Thread-1");
       R1.start();
-      
+
       RunnableDemo R2 = new RunnableDemo( "Thread-2");
       R2.start();
-   }   
+
+      RunnableDemo R3 = new RunnableDemo( "Thread-3");
+      R3.start();
+   }
 }

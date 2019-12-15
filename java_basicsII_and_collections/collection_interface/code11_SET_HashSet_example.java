@@ -1,14 +1,16 @@
-import java.util.*;
-class TestCollection9{
- public static void main(String args[]){
- 
-  HashSet<String> al=new HashSet<String>();
-  al.add("Ravi");
-  al.add("Vijay");
-  al.add("Ravi");
-  al.add("Ajay");
+import java.util.Iterator;
+import java.util.HashSet;
 
-  Iterator<String> itr=al.iterator();
+class TestCollection11{
+ public static void main(String args[]){
+
+  HashSet<String> hs=new HashSet<String>();
+  hs.add("a");
+  hs.add("b");
+  hs.add("c");
+  hs.add("d");
+
+  Iterator<String> itr=hs.iterator();
   while(itr.hasNext()){
    System.out.println(itr.next());
   }
