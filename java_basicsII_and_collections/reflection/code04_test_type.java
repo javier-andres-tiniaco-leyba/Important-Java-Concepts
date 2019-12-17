@@ -4,9 +4,9 @@ interface My {}
 
 // The java catch of specify requirement mandates that in order
 // from a program to compile, exceptions must be either specified
-// to be thrown or caugth    
+// to be thrown or caugth
 
-class Test{
+class Test {
     public static void main(String[] args) {
         try{
             Class c=Class.forName("Simple");

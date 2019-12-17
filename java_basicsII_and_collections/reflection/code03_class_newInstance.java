@@ -19,8 +19,8 @@ class Test {
         // newInstance method
         Object obj = myClass.newInstance();
 
-        // Type casting is needed because newInstance() returns Object,
-        // there is no way the compiler can know that in this case
+        // Type casting is needed because newInstance() returns
+        // Object in this case, there is no way the compiler can know that
         // the object is of type Test, and since Test is NOT a super
         // class of Object, the assignment would not work without casting
         // object to Test type.
