@@ -4,10 +4,9 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
-- Java [escape character literals.](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
-
 - java_basicsII_and_collections/reflection <br>
-https://www.geeksforgeeks.org/java-lang-class-class-java-set-1/ Ex18
+https://www.geeksforgeeks.org/java/
+https://www.geeksforgeeks.org/java-lang-class-class-java-set-1/ Ex21
 https://docs.oracle.com/javase/8/docs/api/java/lang/Class.html
 https://docs.oracle.com/javase/8/docs/api/
 
