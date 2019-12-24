@@ -4,6 +4,10 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
+- java_basicsII_and_collections/generics/code07: <br>
+https://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
+
+
 - java_basicsII_and_collections/reflection <br>
 https://www.geeksforgeeks.org/java/
 https://www.geeksforgeeks.org/java-lang-class-class-java-set-1/ Ex21
