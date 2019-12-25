@@ -4,8 +4,10 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
-- java_basicsII_and_collections/generics/code07: <br>
-https://docs.oracle.com/javase/tutorial/java/generics/boundedTypeParams.html
+- Java generics docs: <br>
+https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html
+https://docs.oracle.com/javase/tutorial/extra/generics/index.html
+- java_basicsII_and_collections/generics/code15. <br>
 
 
 - java_basicsII_and_collections/reflection <br>
