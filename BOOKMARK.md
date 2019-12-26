@@ -4,6 +4,10 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
+- Java lambda expressions (theory and exercises): <br>
+https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+
+
 - Java generics docs: <br>
 https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html
 https://docs.oracle.com/javase/tutorial/extra/generics/index.html
