@@ -4,6 +4,11 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
+- Java System class and -D option java CLI: <br>
+https://docs.oracle.com/javase/8/docs/api/java/lang/System.html
+https://coderanch.com/t/178539/certification/java-command-line-option-good
+
+
 - Java lambda expressions and method references: <br>
 https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
