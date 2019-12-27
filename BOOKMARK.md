@@ -4,8 +4,9 @@
 
 > The Java Programming Language 4th edition Arnold - Gosling and Holmes page 360
 
-- Java lambda expressions (theory and exercises): <br>
+- Java lambda expressions and method references: <br>
 https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
 
 
 - Java generics docs: <br>
