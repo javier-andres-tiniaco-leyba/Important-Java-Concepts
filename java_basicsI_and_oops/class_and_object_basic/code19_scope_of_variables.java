@@ -7,15 +7,16 @@
 
 // - Member variables: defined inside class outside method
 // - Local variables: defined within methods. They do not exist
-// after method execution is over.
-
+//                    after method execution is over.
 
 class Test  {
-    static int x = 11;
+
+    static  int x = 11;
     private int y = 33;
+
     public void method1(int x) {
         Test t = new Test();
-        this.x = 22;
+        Test.x = 22;
         y = 44;
 
         System.out.println("Test.x: " + Test.x);

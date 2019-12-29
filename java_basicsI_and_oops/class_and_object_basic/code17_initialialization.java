@@ -10,6 +10,7 @@ class A {
 }
 
 class B extends A {
+
     static int staticVariable2 = 123456;
     static int staticVariable;
 
