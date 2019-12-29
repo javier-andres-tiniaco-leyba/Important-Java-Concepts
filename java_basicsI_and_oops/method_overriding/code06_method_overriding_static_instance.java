@@ -25,12 +25,11 @@ class Cat extends Animal {
         Animal myAnimal = myCat;
         Animal.testClassMethod();
         myAnimal.testInstanceMethod();
-        myAnimal.testClassMethod();
         // This method can not be called using an Animal reference type
         // even though the object is a Cat instance
         // myAnimal.callSuperInstanceMethod();
 
-        myCat.testClassMethod();
+        Cat.testClassMethod();
         myCat.testInstanceMethod();
         myCat.callSuperInstanceMethod();
 

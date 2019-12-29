@@ -5,11 +5,11 @@ those objects stored somewhere in memory.
 
 - There are five reference types in java:
   - Annotation: provide a way to associate metadata (data about data)
-    with program elements.
+    with program elements. Annotations are a special type of interfaces.
   - Array: Provides a fixed size data structure that stores data elements of the same type.
   - Class: ...
   - Enumeration: A reference for a set of objects that represents a related
-    set of choices.
+    set of choices. Enumerations ara a special type of class.
   - Interface: Provides a public API and is implemented by Java classes.
 
 - There are two type categories in java: reference types and primitives types.
