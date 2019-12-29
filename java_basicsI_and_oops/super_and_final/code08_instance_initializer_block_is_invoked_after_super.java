@@ -1,17 +1,19 @@
-class A{
+class A {
     A(){
         System.out.println("parent class constructor invoked");
     }
 }
 
-class B2 extends A{
+class B2 extends A {
 
-    B2(){
+    B2() {
         // super(); // super() is implicitly introduced here by the compiler
         System.out.println("child class constructor invoked");
     }
 
-    {System.out.println("instance initializer block is invoked");}
+    {
+        System.out.println("instance initializer block is invoked");
+    }
 
     public static void main(String[] args) {
         B2 b = new B2();

@@ -15,7 +15,10 @@ class B3 extends A {
         System.out.println("child class constructor invoked "+a);
     }
 
-    {System.out.println("instance initializer block is invoked");}
+    {
+        System.out.println("instance initializer block is invoked");
+    }
+
 
     public static void main(String[] args) {
         B3 b1=new B3();

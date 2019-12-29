@@ -1,9 +1,10 @@
 class Bike9 {
+
     //final variable
-    final int speedlimit=90;
+    final int speedLimit=90;
 
     void run() {
-        speedlimit=400;
+        speedLimit = 400;
     }
 
     public static void main(String[] args) {

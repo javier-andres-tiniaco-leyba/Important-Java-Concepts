@@ -3,7 +3,10 @@ class Animal {
 }
 
 class Dog extends Animal{
+
+    // child color variable shadows parent color one
     String color="black";
+
     void printColor() {
         System.out.println(color);//prints color of Dog class
         System.out.println(super.color);//prints color of Animal class
@@ -11,7 +14,7 @@ class Dog extends Animal{
 }
 
 class TestSuper1 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Dog d=new Dog();
         d.printColor();
     }

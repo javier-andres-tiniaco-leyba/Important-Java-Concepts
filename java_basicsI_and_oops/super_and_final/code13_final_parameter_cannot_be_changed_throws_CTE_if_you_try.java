@@ -1,10 +1,10 @@
 // THROWS Compile Time Error
 // Method parameters can be declared final
-// which means that they can not be changed 
+// which means that they can not be changed
 
 class Bike11 {
     int cube(final int n) {
-        n=n+2;//can't be changed as n is final
+        n+=2;//can't be changed as n is final
         return n*n*n;
     }
 
