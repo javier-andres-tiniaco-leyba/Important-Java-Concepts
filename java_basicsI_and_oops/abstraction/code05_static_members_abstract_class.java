@@ -1,7 +1,6 @@
-
 abstract class Shape {
 
-    public static double PI = 3.14;
+    public static final double PI = 3.14;
 
     abstract void draw();
 

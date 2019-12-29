@@ -6,7 +6,8 @@
 abstract class Bank {
     abstract int getRateOfInterest();
 }
-class BBVA extends Bank{
+
+class BBVA extends Bank {
     int getRateOfInterest() {
         return 7;
     }
@@ -23,7 +24,7 @@ class TestBank{
         Bank b;
         b = new STD();
         System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");
-        b=new BBVA();  
+        b=new BBVA();
         System.out.println("Rate of Interest is: "+b.getRateOfInterest()+" %");
     }
 }

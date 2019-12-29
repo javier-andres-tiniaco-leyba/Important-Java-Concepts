@@ -3,16 +3,30 @@
 // Abstract class needs to be extended and its method implemented.
 // It cannot be instantiated.
 
+// example of abstract class that have method body
+
 abstract class Bike {
-  abstract void run();
+    Bike() {
+        System.out.println("bike is created");
+    }
+
+    abstract void run();
+
+    void changeGear() {
+        System.out.println("gear changed");
+    }
 }
 
-class Honda4 extends Bike{
+class Honda extends Bike {
     void run() {
         System.out.println("running safely..");
     }
+}
+
+class TestAbstraction2 {
     public static void main(String[] args) {
-        Bike obj = new Honda4();
-        obj.run();  
+        Bike obj = new Honda();
+        obj.run();
+        obj.changeGear();
     }
 }
