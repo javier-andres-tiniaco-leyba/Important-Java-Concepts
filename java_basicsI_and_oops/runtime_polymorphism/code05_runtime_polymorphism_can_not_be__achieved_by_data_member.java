@@ -4,21 +4,16 @@
 // variable of a superclass. The determination of the method to be called is
 // based on the object being referred to by the reference variable.
 
-class Animal {
-    void eat() {
-        System.out.println("animal is eating...");
-    }
+class Bike {
+    int speedlimit=90;
 }
 
-class Dog extends Animal {
-    void eat() {
-        System.out.println("dog is eating...");
-    }
-}
+class Honda3 extends Bike {
 
-class BabyDog1 extends Dog {
+    int speedlimit=150;
+
     public static void main(String[] args) {
-        Animal a=new BabyDog1();
-        a.eat();  
+        Bike obj=new Honda3();
+        System.out.println(obj.speedlimit);//90  
     }
 }

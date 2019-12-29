@@ -3,11 +3,13 @@
 // 1. static/early/compile-time binding (method overloading, happens in same class)
 // 2. dynamic/late/run-time binding (method overriding, happens in different class)
 
-class Dog{  
- private void eat(){System.out.println("dog is eating...");}  
-  
- public static void main(String args[]){  
-  Dog d1=new Dog();  
-  d1.eat();  
- }  
-}   
+class Dog {  
+    private void eat() {
+        System.out.println("dog is eating...");
+    }
+
+    public static void main(String[] args) {
+        Dog d1=new Dog();
+        d1.eat();
+    }
+}
