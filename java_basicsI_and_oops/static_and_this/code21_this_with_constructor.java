@@ -5,6 +5,7 @@
 // If "this" keyword is present in a constructor, it must be the first line.
 
 class Rectangle {
+
     private int x, y;
     private int width, height;
 
