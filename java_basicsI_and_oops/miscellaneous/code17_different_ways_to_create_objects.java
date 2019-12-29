@@ -53,7 +53,7 @@ class Test implements Cloneable {
         // newInstance() method of Constructor class. This method is similar
         // to the one involving Class newInstance method, since reflection
         // is used to invoke a class constructor. Additionally, this method
-        // allow for the invokation of constructors with parameters
+        // allow for the invokation of constructors with parameters.
         // For this to work, the constructor must be public
         Constructor c = Test.class.getConstructor(int.class);
 

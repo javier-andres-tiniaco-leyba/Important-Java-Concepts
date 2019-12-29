@@ -1,5 +1,8 @@
 // https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html
 
+// When a lambda expression only calls a method, a method reference can be
+// used instead.
+
 import java.util.function.Supplier;
 import java.util.Arrays;
 import java.util.Collection;

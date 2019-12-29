@@ -9,7 +9,7 @@
 //      -  Since java 8 it is possible to call forEach() method
 //      -  of an Iterable which performs an action of each
 //         element of the Iterable. The default implementation of
-//         forEach also used for-each loop internally.
+//         forEach also uses for-each loop internally.
 //      -  An iterable represents a collection which can be traversed.
 // Iterator is contained in the package java.util
 //  - classes that implement Iterator must implement:
@@ -47,10 +47,12 @@ class IteratorIterableTest {
         }
 
         // Since java 8 forEachRemaining:
+        // Iterators are consumed, so another one is needed
         iterator = Arrays.asList(1, 2, 3, 4, 5).iterator();
         iterator.forEachRemaining(System.out::println);
 
-        List<Integer> mylist = Arrays.asList(1, 2, 3, 4, 5);
+        ArrayList<Integer> mylist =
+            new ArrayList<>(Arrays.<Integer>asList(1, 2, 3, 4, 5));
         System.out.println(mylist);
         mylist.forEach(System.out::println);
 
@@ -58,9 +60,10 @@ class IteratorIterableTest {
         // returned from this iterator from the underlying collection
         for (Iterator<Integer> it = mylist.iterator(); it.hasNext();) {
             if (it.next() % 2 == 0) {
-                it.remove(); // this throws an error because the method remove in List interface is abstract
+                it.remove();
             }
         }
+        // Notice how even numbers have been removed from the collection
         System.out.println(mylist);
     }
 }
