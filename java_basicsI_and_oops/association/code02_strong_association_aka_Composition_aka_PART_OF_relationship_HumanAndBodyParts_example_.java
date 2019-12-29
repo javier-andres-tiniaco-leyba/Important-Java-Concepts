@@ -1,17 +1,18 @@
-// This relationship between two objects is known as the association in OOPS software design 
-// and depicted by an arrow in UML.
+// This relationship between two objects is known as the association in OOPS
+// software design and depicted by an arrow in UML.
 
-// Composition is when one class owns other class 
-// and the other class can not meaningfully exist, when it's owner destroyed
+// Composition is when one class owns other class and the other class
+// can not meaningfully exist, when it's owner destroyed.
 
-// Since heart, brain, hands , etc are part of Human, the relationship between them is Composition.
+// Since heart, brain, hands , etc are part of Human, the relationship between
+// them is Composition.
 
-public class Human {
+class Human {
     //final will make sure body part are initialized
-    private final Heart myHeart;  
-    private final Brain myBrain;  
-    private final Hands myHands;  
-       
+    private final Heart myHeart;
+    private final Brain myBrain;
+    private final Hands myHands;
+
     public Human(){
        myHeart  = new Heart();
        myBrain  = new Brain();
