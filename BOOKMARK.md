@@ -1,10 +1,9 @@
 ### Working on
 
-- Numbers and Strings: <br>
-https://docs.oracle.com/javase/tutorial/java/data/index.html
-
--I/O: <br>
+- I/O ./java_io_networking/input_output: <br>
 https://docs.oracle.com/javase/tutorial/essential/io/index.html
+https://docs.oracle.com/javase/tutorial/essential/io/scanning.html
+https://docs.oracle.com/javase/tutorial/essential/io/datastreams.html
 
 - Collections framework: <br>
 https://docs.oracle.com/javase/tutorial/collections/index.html
