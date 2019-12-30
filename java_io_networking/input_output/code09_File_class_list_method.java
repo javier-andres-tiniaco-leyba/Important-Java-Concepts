@@ -1,21 +1,22 @@
 import java.io.File;
-public class tstst {
+
+class Test {
 
    public static void main(String[] args) {
       File file = null;
       String[] paths;
-  
-      try {      
+
+      try {
          // create new file object
-         file = new File("C:\\Users\\Suryakant\\Documents\\");
+         file = new File(".");
 
          // array of files and directory
          paths = file.list();
 
          // for each name in the path array
-         for(String path:paths) {
+         for(String path : paths) {
             // prints filename and directory name
-            System.out.println(path);
+            System.out.format("%s%n",path);
          }
       } catch (Exception e) {
          // if any error occurs

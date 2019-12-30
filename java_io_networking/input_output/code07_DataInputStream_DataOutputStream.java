@@ -1,18 +1,34 @@
-import java.io.*;
-public class DataInput_Stream {
+import java.io.IOException;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 
-   public static void main(String args[])throws IOException {
+class DataInputStreamDemo {
 
-      // writing string to a file encoded as modified UTF-8
-      DataOutputStream dataOut = new DataOutputStream(new FileOutputStream("E:\\file.txt"));
-      dataOut.writeUTF("hello, nice to meet you!");
+    public static void main(String[] args) throws IOException {
 
-      // Reading data from the same file
-      DataInputStream dataIn = new DataInputStream(new FileInputStream("E:\\file.txt"));
+        DataOutputStream dataOut = null;
+        DataInputStream dataIn = null;
+        try {
+            // writing string to a file encoded as modified UTF-8
+            dataOut = new DataOutputStream(
+                new FileOutputStream("file.txt"));
 
-      while(dataIn.available()>0) {
-         String k = dataIn.readUTF();
-         System.out.print(k+" ");
-      }
-   }
+            dataOut.writeUTF("hello, nice to meet you!");
+
+            // Reading data from the same file
+            dataIn = new DataInputStream(
+                new FileInputStream("file.txt"));
+
+            while(dataIn.available()>0) {
+                String k = dataIn.readUTF();
+                System.out.print(k+" ");
+            }
+        } finally {
+            System.out.format("%n%n");
+            dataIn.close();
+            dataOut.close();
+        }
+    }
 }
