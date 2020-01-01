@@ -1,16 +1,16 @@
 import java.util.Map;
 import java.util.HashMap;
 
-class TestCollection1{
- public static void main(String args[]){
+class TestCollection1 {
+    public static void main(String[] args) {
 
-  Map<Integer,String> map=new HashMap<Integer,String>();
-  map.put(100,"a");
-  map.put(101,"b");
-  map.put(102,"c");
+        Map<Integer,String> map = new HashMap<Integer,String>();
+        map.put(100,"a");
+        map.put(101,"b");
+        map.put(102,"c");
 
-  for(Map.Entry m:map.entrySet()){
-   System.out.println(m.getKey()+" "+m.getValue());
-  }
- }
+        for(Map.Entry m : map.entrySet()) {
+            System.out.format("key:%s value:%s%n",m.getKey(), m.getValue());
+        }
+    }
 }
