@@ -1,9 +1,10 @@
 ### Working on
 
-- I/O ./java_io_networking/input_output: <br>
+- I/O ./java_io_networking/input_output: i/o code20<br>
 https://docs.oracle.com/javase/tutorial/essential/io/index.html
-https://docs.oracle.com/javase/tutorial/essential/io/scanning.html
-https://docs.oracle.com/javase/tutorial/essential/io/datastreams.html
+https://docs.oracle.com/javase/tutorial/essential/io/pathOps.html
+http://tutorials.jenkov.com/java-io/streams.html
+http://tutorials.jenkov.com/java-howto/index.html
 
 - Collections framework: <br>
 https://docs.oracle.com/javase/tutorial/collections/index.html
