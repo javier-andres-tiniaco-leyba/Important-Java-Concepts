@@ -11,10 +11,8 @@ class CSVReader {
 	public static void main(String[] args) {
 		try(BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
 
-			if(headers) {
-				br.readLine();
-            }
-            
+			if(headers) br.readLine();
+
             String  line = "";
 			while((line = br.readLine()) != null) {
 				String[] country = line.split(csvSplitBy);

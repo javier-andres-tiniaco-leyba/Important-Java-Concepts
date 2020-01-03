@@ -31,6 +31,7 @@ class Test {
         // Get absolute path of a file in the current dir
         // Path being pointed to does not have to exist
         System.out.format("%s%n", Paths.get("README.md").toAbsolutePath());
+        System.out.format("%s%n", Paths.get("README.md").toUri());
 
         Path fp = Paths.get("README.md").toRealPath();
         System.out.format("%s%n",fp);
@@ -49,5 +50,19 @@ class Test {
         System.out.format("%s%n",p5_to_p6);
         System.out.format("%s%n",p6_to_p5);
 
+        // Iterating over path elements (Path implements iterable)
+        for(Path name : path) System.out.println(name);
+
+        // Equals method
+        Path otherPath = p4;
+        Path beginning = Paths.get("/home");
+        Path ending = Paths.get("foo");
+        if (path.equals(otherPath)) {
+            // equality logic here
+        } else if (path.startsWith(beginning)) {
+            // path begins with "/home"
+        } else if (path.endsWith(ending)) {
+            // path ends with "foo"
+        }
     }
 }
