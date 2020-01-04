@@ -11,8 +11,9 @@ class LocalClassExample {
         class PhoneNumber {
             String formattedPhoneNumber = null;
 
-            PhoneNumber(String phoneNumber){
-                String currentNumber = phoneNumber.replaceAll(regularExpression,"");
+            PhoneNumber(String phoneNumber) {
+                String currentNumber =
+                    phoneNumber.replaceAll(regularExpression,"");
                 formattedPhoneNumber =
                     (currentNumber.length() == numberLength)?currentNumber:null;
             }
@@ -26,14 +27,15 @@ class LocalClassExample {
         PhoneNumber myNumber2 = new PhoneNumber(phoneNumber2);
 
         String isValid;
-        isValid = myNumber1.getNumber() == null ? "invalid":myNumber1.getNumber();
+        isValid =
+            myNumber1.getNumber() == null ? "invalid":myNumber1.getNumber();
         System.out.println("First number is " + isValid);
-        isValid = myNumber2.getNumber() == null ? "invalid":myNumber2.getNumber();
+        isValid =
+            myNumber2.getNumber() == null ? "invalid":myNumber2.getNumber();
         System.out.println("Second number is " + isValid);
     }
 
     public static void main(String... args) {
         validatePhoneNumber("123-456-7890","456-7890");
     }
-
 }
