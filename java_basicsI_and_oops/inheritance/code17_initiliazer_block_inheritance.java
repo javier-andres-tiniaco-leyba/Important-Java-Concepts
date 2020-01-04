@@ -1,4 +1,4 @@
-// // https://www.javatpoint.com/instance-initializer-block
+// https://www.javatpoint.com/instance-initializer-block
 
 class A{
     A(){
@@ -6,7 +6,7 @@ class A{
     }
 }
 
-class B3 extends A{
+class B3 extends A {
     B3(){
         // super();
         System.out.println("child class constructor invoked");
