@@ -11,6 +11,7 @@ class ScanXan {
 
         try {
             s = new Scanner(new BufferedReader(new FileReader("xanadu.txt")));
+            System.out.format("Pattern used as delimiter: %s%n",s.delimiter());
             // s.useDelimiter(",\\s*");
 
             while (s.hasNext()) {
