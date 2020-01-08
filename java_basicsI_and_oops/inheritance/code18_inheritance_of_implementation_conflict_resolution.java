@@ -8,7 +8,7 @@
  * a default, then the more specific interface wins. </li>
  * </ul>
  */
-public class Inheritance {
+class Inheritance {
 
     /**
      * The behavior of an creature that can swim
