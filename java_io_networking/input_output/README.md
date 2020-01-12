@@ -102,4 +102,14 @@ Table extracted from [here.](http://tutorials.jenkov.com/java-io/index.html)
 ## Pipes
 Pipes in Java IO provides the ability for two threads running in the same JVM to communicate. Therefore pipes can also be sources or destinations of data. <br>
 
-You cannot use a pipe to communicate with a thread in a different JVM (different process). The pipe concept in Java is different from the pipe concept in Unix / Linux, where two processes running in different address spaces can communicate via a pipe. In Java, the communicating parties must be running in the same process, and should be different threads. <br>
+You cannot use a pipe to communicate with a thread in a different JVM 
+(different process). The pipe concept in Java is different from the pipe 
+concept in Unix / Linux, where two processes running in different address 
+spaces can communicate via a pipe. In Java, the communicating parties 
+must be running in the same process, and should be different threads. <br>
+
+# java.nio
+The java new I/O package is complementary to the java.io package. It is based
+on two fundamental concepts: channels and buffers. Channels are and abstraction
+that represents an open connection to an I/O device, whereas buffers hold data
+that can be transferred through channels.
