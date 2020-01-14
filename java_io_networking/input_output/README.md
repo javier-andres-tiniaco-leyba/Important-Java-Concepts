@@ -12,6 +12,12 @@
 - Reading and Writing Primitive Data (long, int etc.)
 - Reading and Writing Objects.
 
+## Java I/O methods by complexity
+
+![IO method](https://docs.oracle.com/javase/tutorial/figures/essential/io-fileiomethods.gif)
+
+Extracted from [here.](https://docs.oracle.com/javase/tutorial/essential/io/file.html)
+
 ## Java I/O classes overview table :
 Table extracted from [here.](http://tutorials.jenkov.com/java-io/index.html)
 
