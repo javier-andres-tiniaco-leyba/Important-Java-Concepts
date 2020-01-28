@@ -1,6 +1,6 @@
 // Exception Handling is mainly used to handle the checked exceptions.
 // If there occurs any unchecked exception such as NullPointerException,
-// it is programmers fault that he is not performing check up.
+// it is programmers fault because API is not being used correctly.
 
 // Checked exceptions can be propagated by throws keyword
 
@@ -8,7 +8,8 @@ import java.io.IOException;
 
 class TestThrows1 {
     void m() throws IOException {
-        throw new IOException("device error");//checked exception
+        //checked exception
+        throw new IOException("device error");
     }
 
     void n() throws IOException {

@@ -7,11 +7,9 @@ class Rethrow {
             try {
                 System.out.format("%s/%s=%s%n",
                     numer[i],denom[i],numer[i]/denom[i]);
-            }
-            catch (ArithmeticException exc) {
+            } catch (ArithmeticException exc) {
                 System.out.println("Can't divide by Zero!");
-            }
-            catch (ArrayIndexOutOfBoundsException exc) {
+            } catch (ArrayIndexOutOfBoundsException exc) {
                 System.out.println("No matching element found.");
                 throw exc; // rethrow the exception
             }
@@ -23,8 +21,7 @@ class RethrowDemo {
     public static void main(String[] args) {
         try {
             Rethrow.genException();
-        }
-        catch(ArrayIndexOutOfBoundsException exc) {
+        } catch(ArrayIndexOutOfBoundsException exc) {
             // recatch exception
             System.out.println("Fatal error program terminated.");
         }

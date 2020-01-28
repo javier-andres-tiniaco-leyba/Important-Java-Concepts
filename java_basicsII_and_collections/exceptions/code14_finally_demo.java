@@ -17,15 +17,12 @@ class UseFinally {
                     return;        // return from try block
             }
             System.out.println("This will never be executed!");
-        }
-        catch (ArithmeticException exc) {
+        } catch (ArithmeticException exc) {
             System.out.println("Can't divide by Zero!");
             return; // return from catch
-        }
-        catch (ArrayIndexOutOfBoundsException exc) {
+        } catch (ArrayIndexOutOfBoundsException exc) {
             System.out.println("No matching element found.");
-        }
-        finally {
+        } finally {
             System.out.println("Leaving try.");
         }
     }

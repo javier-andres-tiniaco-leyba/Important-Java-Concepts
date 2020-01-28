@@ -1,8 +1,7 @@
 // https://stackoverflow.com/questions/7849416/what-is-a-suppressed-exception
 
 class SuppressedExceptions {
-    public static void main(String[] args) throws
-            TryException, FinallyException {
+    public static void main(String[] args) {
         try {
             callTryFinallyBlock();
         } catch (Exception e) {
@@ -18,11 +17,9 @@ class SuppressedExceptions {
         Throwable t = null;
         try {
             throw new TryException();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             t = e;
-        }
-        finally {
+        } finally {
             FinallyException fEx = new FinallyException();
             if(t != null) fEx.addSuppressed(t);
             throw fEx;

@@ -1,5 +1,7 @@
-// By default, Checked Exceptions are not forwarded in calling chain.
-// (propagated).
+// By default, Checked Exceptions are not propagted.
+// Checked exceptions are subject to the catch or specify
+// requirement, so they must be either catch of specified
+// to be thrown.
 
 class TestExceptionPropagation2 {
     void m() {

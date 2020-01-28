@@ -1,4 +1,4 @@
-class TestTryCatch2 {
+class CatchUncheckedException {
     public static void main(String[] args) {
         try {
             int data=50/0;

@@ -1,7 +1,5 @@
-// At a time only one Exception is occured and at a time only one
-// catch block is executed. All catch blocks must be ordered from
-// most specific to most general. I.E. catch for ArithmeticException
-// must come before catch for Exception.
+// Exceptions must be ordered from most specific to general.
+// This will not compile due to the wrong oredering of Exceptions.
 
 class TestMultipleCatchBlock1 {
     public static void main(String[] args) {
