@@ -4,7 +4,7 @@ The java.util package contains all the classes and interfaces for Collection fra
 
 **Map :**
 An object that maps keys to values. A map is not ordered and cannot contain duplicate keys (but can contain duplicate values). Each key can map to at most one value.
-    
+
 **Collection :**
 A collection represents a group of objects, known as its elements. The JDK provides implementations of more specific subinterfaces like Set and List.
 
@@ -141,3 +141,51 @@ All legacy classes were re-engineered to support generic in JDK5.
 Legacy = heritage of old java version.
 
 Legacy classes and interfaces - Enumeration, Vector, Stack, Dictionary, HashTable, Properties...
+
+# Exceptions
+This information was extracted from the oracle ![docs](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html).
+
+The term exception is a shorthand for the phrase exceptional event.
+**Definition:** An *exception* is an event, which occurs during
+the execution of a program, that disrupts the normal flow of the program's instructions.
+
+Creating and exception object and handling it to the runtime system is called *throwing an exception*. A block of code that
+can handle exceptions is called *exception handler*.
+
+## The catch of specify requirement
+In java, code that throws might throw checked exceptions must
+be enclosed by either of the following:
+- A try statement that *catches* the exception.
+- A method that *specifies* that can thrwo the exception.
+Code that does not honour the catch or specify requirement will
+not compile.
+
+### The three kinds of exceptions
+Checked exceptions are subject to the catch of specify requirement, whereas unchecked exceptions are not.
+
+- **Checked exceptions:** these are exceptional conditions that
+a well written program should and anticipate and recover from.
+I.E. java.io.FileNotFoundException. All exceptions are checked
+exceptions except for errors and runtime exceptions, which are collectively called unchecked exceptions.
+- **Errors:** These are external conditions that are external
+to the application, and that the application usually can not
+anticipate or recover from. I.E. java.io.IOError.
+- **Runtime exceptions:** These are exceptional conditions that
+are internal to the application, and that the application can not usually anticipate or recover from. These usually indicate
+programming bugs, such as logic errors or improper use and API.
+I.E. NullPointerException, ArithmeticException, IndexOutOfBoundsException.
+
+Most programs throw and catch exceptions derived from the Exception class. On the other hand, runtime exceptions are derived from RuntimeException class, and errors from the Error class. Most applications should not throw runtime exceptions or subclass RuntimeException.
+
+## Chained exceptions
+An application often responds to an exception by throwing another exception. In effect, the first exception causes another.
+
+**Stack trace:** Information about the execution history of the current thread and list of the names of the classes and methods that were called at the point when the exception occured. A stack trace is a useful debugging tool.
+
+## Suppressed exceptions
+Exceptions can be thrown from the block associated with the try-with-resources statement. If an exception is thrown from the try block and one or more exceptions are thrown from the try-with resources statement, then the exceptions thrown from the try-with-resources statement are suppressed, and the exception thrown by the block is the one that is thrown by the method. There suppressed exceptions can be retrieved by calling Throwable.getSuppressed method from the exception thrown by the try block.
+
+## Advantages of exceptions
+- Separating error-handling from regular code: Exceptions provide the means to separate the details of what to do when something out of the ordinary happens from the main logic of the program.
+- Propagating errors up the call stack: another advantage is the ability to propagate error reporting up the call stack. Unchecked exceptions are automatically propagated up the call stack, whereas checked exceptions must be declared to be thrown in order to propagate them.
+- Grouping and differentiating error types: Because ell exceptions thrown within a program are objects, the grouping or categorizing of exceptions is a natural outcome of the class hierarchy. A method can write specific handlers that can handle very specific exceptions, or write exception handlers that catch all exceptions from a given group. In most situations, the best exceptions handlers are very specific, so they can handle every exception accordingly.
