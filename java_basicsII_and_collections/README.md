@@ -142,6 +142,51 @@ Legacy = heritage of old java version.
 
 Legacy classes and interfaces - Enumeration, Vector, Stack, Dictionary, HashTable, Properties...
 
+
+# Generics
+Introduced in J2SE 5.0, this long awaited enhancement to the type system allows a type or method to operate on objects of various types while providing compile-time safety. It adds compile-time safety to the Collections Framework and eliminates the drudgery of casting. Generics adds stability to code by making some bugs detectable at compile-time.
+
+## Why use generics?
+Generics enable types (classes and interfaces) to be parameters when defining classes, interfaces and methods. Much like the more familiar formal parameters used in method declarations, type parameters provide a way for code to be reused with different inputs. The difference is that the input to formal parameters are values, whereas the inputs to type parameters are types. Code that used generics has many benefits over non-generic code:
+- Stronger type checks at compile time.
+- Elimination of casts.
+- Enable programmers to implement generic algorithms.
+
+## Generic types
+A generic type is a generic class or interface that is parameterized over types.
+
+**Type parameter and type argument terminology:** Many developers use the terms "type parameter" and "type argument" interchangeably, but these terms are not the same. When coding, one provides type arguments in order to create a parameterized type. Therefore, the T in `Foo<T>` is a type parameter and the String in `Foo<String>` f isa type argument.
+
+### Type parameters naming convention
+Type parameter names are single, uppercase letters. The most commonly used type parameters names are:
+- E - Element
+- K - Key
+- N - Number
+- T - type
+- V - Value
+- S,U,V, etc - 2nd, 3rd, 4th types.
+
+### Raw types
+A raw type is the name of a generic class or interface without any type arguments. Raw types bypass generic type checks, they are mainly use in legacy code and should be avoided whenever possible. They only exist for backward compatibility.
+
+## Generics classes and subtyping
+Given to concrete types A and B (for example, Number and Integer), `MyClass<A>` has not relationship to `MyClass<B>`, regardless wheter or not A and B are related. The common parent of `MyClass<A>` and `MyClass<B>` is Object.
+
+Generic classes and interfaces can be subtyped by extending or implementing the. The relationship between the type parameters of one class or interface and the type parameters of another are determined by the `extends` or `implements` clauses.
+
+**Target type:** the target type of an expression is the data type that the java compiler expects depending on where the expression appears.
+
+## Restrictions on generics
+- Can not instantiate generic type with primitive types.
+- Can not create instances of type parameters.
+- Can not declare static fields whose types are type parameters.
+- Can not use casts or instanceof with parameterized types.
+- Can not create arrays of parameterized types.
+- Can not create, catch or throw objects of parameterized types.
+- Can not overload a method where the formal parameter types of each overload erase to the same raw type.
+
+
+
 # Exceptions
 This information was extracted from the oracle ![docs](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html).
 
