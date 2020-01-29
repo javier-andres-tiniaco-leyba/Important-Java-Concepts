@@ -1,4 +1,4 @@
-// RuntimeException are part of checked exceptions,so they are
+// RuntimeExceptions are unchecked exceptions,so they are
 // not subject to the catch or specify requirement,which is
 // why validate method neither catch not specifies
 // ArithmeticExeption.

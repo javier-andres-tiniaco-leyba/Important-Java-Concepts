@@ -16,7 +16,7 @@ class TestExceptionPropagation2 {
         try{
             n();
         } catch(Exception e) {
-            System.out.println("exception handeled");
+            System.out.println("exception handled");
         }
     }
 
