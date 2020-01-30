@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
@@ -15,6 +16,35 @@ class Node {
 
 class BST {
 
+    public static <Integer> Collection<Integer> keySet(Node root) {
+        List<Integer> keys = new LinkedList<>();
+        if(node==null) return keys;
+        Deque<Node> stack = new LinkedList<>(); stack.addFirst(null);
+        boolean leftIsNull, rightIsNull;
+        for(Node current = root; current != null;) {
+            //System.out.println(current.data);
+            leftIsNull = current.left == null;
+            rightIsNull = current.right == null;
+            if(!leftIsNull && !rightIsNull) {
+                stack.addFirst(current.right);
+                keys.add(current.data);
+                current = current.left;
+            } else {
+                keys.add(current.data);
+                current = stack.removeLast();
+            }
+
+            if(!leftIsNull && rightIsNull) {
+                stack.addFirst(current.data);
+                current = current.left;
+            } else {
+                
+            }
+
+        }
+        return keys;
+    }
+
     public static int getHeightIterarive(Node root) {
         if(root == null) return 0;
         int hmax = 1;
@@ -22,7 +52,7 @@ class BST {
         Deque<Integer> stackH = new LinkedList<>(); stackH.addFirst(0);
         Deque<Node> stack = new LinkedList<>(); stack.addFirst(null);
         for(Node current = root; current != null;) {
-            System.out.println(current.data);
+            //System.out.println(current.data);
             if(current.right != null) {
                 stackH.addFirst(htmp + 1);
                 stack.addFirst(current.right);
@@ -81,5 +111,7 @@ class BST {
         System.out.format("BST depth(recursive): %d%n", height);
         height = getHeightIterarive(root);
         System.out.format("BST depth(Iterative): %d%n", height);
+
+        keySet(root).forEach(System.out::println);
     }
 }
