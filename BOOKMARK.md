@@ -1,3 +1,11 @@
+### Learning path
+Exceptions -> Generics -> Lambda exp -> I/O -> Collections Framework -> JDBC
+Design patterns
+Frameworks
+    Spring boot
+    Apache pdf box
+    Apache common collections
+
 ### Working on
 https://docs.oracle.com/javase/tutorial/extra/generics/subtype.html
 https://www.ibm.com/developerworks/java/library/j-jtp01255/index.html
