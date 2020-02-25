@@ -1,0 +1,3 @@
+#---Saved---
+#Tue Feb 25 11:02:11 GMT+01:00 2020
+PERSISTENTECHO=myvar
