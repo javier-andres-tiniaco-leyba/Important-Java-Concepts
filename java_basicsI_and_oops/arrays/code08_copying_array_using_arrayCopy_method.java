@@ -1,4 +1,4 @@
-//We can copy an array to another by the arraycopy method of System class.
+//We can efficiently copy an array to another by the arraycopy method of System class.
 
 class TestArrayCopyDemo {
     public static void main(String[] args) {
